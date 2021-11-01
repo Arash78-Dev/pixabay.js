@@ -98,10 +98,29 @@ async function req() {
     gallery.innerHTML='';
         if (images.hits.length) {
             for (let item of images.hits){
-        let randomx = Math.floor((Math.random()*2)+1)
-        let randomy = Math.floor((Math.random()*2)+1)
+                let x ,y;
+                let wid=item.imageWidth;
+                let heig=item.imageHeight;
+                if (wid<3000) {
+                    x=1
+                }
+                else if (wid>3000 && wid<5000) {
+                    x=2
+                }
+                else{
+                    x=3
+                }
+                if (heig<3000) {
+                    y=1
+                }
+                else if (heig>3000 && heig<5000) {
+                    y=2
+                }
+                else{
+                    y=3
+                }
         gallery.innerHTML+=`
-        <div class="card w-${randomx} h-${randomy}">
+        <div class="card w-${x} h-${y}">
                 <img src=${item.largeImageURL}>
                 <div class="caption">
                     <p>${item.tags}</p>
@@ -154,10 +173,29 @@ async function scrollreq() {
          console.log(images.hits);
 
                  for (let item of images.hits){
-             let randomx = Math.floor((Math.random()*2)+1)
-             let randomy = Math.floor((Math.random()*2)+1)
+                let x ,y;
+                let wid=item.imageWidth;
+                let heig=item.imageHeight;
+                if (wid<3000) {
+                    x=1
+                }
+                else if (wid>3000 && wid<5000) {
+                    x=2
+                }
+                else{
+                    x=3
+                }
+                if (heig<3000) {
+                    y=1
+                }
+                else if (heig>3000 && heig<5000) {
+                    y=2
+                }
+                else{
+                    y=3
+                }
              gallery.innerHTML+=`
-             <div class="card w-${randomx} h-${randomy}">
+             <div class="card w-${x} h-${y}">
                      <img src=${item.largeImageURL}>
                      <div class="caption">
                          <p>${item.tags}</p>
@@ -166,7 +204,7 @@ async function scrollreq() {
                  </div>
              `
          }
-         if (images.hits.length==0) {
+         if (!images.hits.length) {
             gallery.innerHTML+=`<h1 id='nothing'>that's it ... Finish</h1>`;
             i=11;
          }
