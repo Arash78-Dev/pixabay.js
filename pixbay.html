@@ -7,30 +7,144 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/fontawesome-free-5.15.4-web/css/all.css'>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
+        <div id="logo"><i id="logos" class="fas fa-camera-retro fa-4x"></i></div>
+        <div id="menu-one">
+            <ul>
+                <li><a href="#">photos</a></li>
+                <li><a href="#">illustration</a></li>
+                <li><a href="#">vectors</a></li>
+                <li><a href="#">videos</a></li>
+                <li><a href="#">musics</a></li>
+                <li><a href="#">sounds effect</a></li>
+            </ul>
+        </div>
+
+        <div id="exlpore" class="drop">
+            <p>explore <span><i class="fas fa-angle-down"></i></span><span style="display: none;"><i class="fas fa-angle-up"></i></span></p>
+        </div>
+        <div class="log">
+            <ul>
+                <li><a href="#">log in</a></li>
+                <li></li>
+                <li><a href="#">join</a></li>
+            </ul>
+        </div>
+        <div >
+            <button id="upload">upload</button>
+        </div>
+        <div id="menu-bar" class="drop">
+            <i id="menu" class="fas fa-bars fa-2x"></i>
+        </div>
+
+        <div id="dropdown" class="hidden">
+            <div id="log" >
+                <ul>
+                    <li><a href="#">log in</a></li>
+                    <li><a href="#">join</a></li>
+                </ul>
+            </div>
+            <div id="media">
+                <h3>media</h3>
+                <div id="main">
+                    <ul>
+                        <li><a href="#">photos</a></li>
+                        <li><a href="#">illustration</a></li>
+                        <li><a href="#">vectors</a></li>
+                        <li><a href="#">videos</a></li>
+                        <li><a href="#">musics</a></li>
+                        <li><a href="#">sounds effect</a></li>
+                    </ul>
+                </div>
+                <div id="dropmedia">
+                    <ul>
+                        <li><a href="#">editor's choice</a></li>
+                        <li><a href="#">popular image</a></li>
+                        <li><a href="#">popular video</a></li>
+                        <li><a href="#">popular search</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Community">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">forum</a></li>
+                    <li><a href="#">artists</a></li>
+                    <li><a href="#">cameras</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>about</h3>
+                <div id="first">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">privacy</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#"><span><i class="fas fa-globe"></i></span> language</a></li>
+                    </ul>
+                </div>
+                <div id="sec">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
 
     </nav>
 
 
 
     <header>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="head">
+            <div id="header">
+                <h1>
+                    Stunning free images & royalty free stock
+                    <br>
+                    find your photo
+                </h1>
+                <p>
+                    Over 2.4 million+ high quality stock images, videos and music shared by our talented community.
+                </p>
+                <button id="button">go to searching</button>
+            </div>
+        </div>
 
     </header>
 
 
-    <section id="gallery">
+    <section class="gallery">
+        <div id="searchbox">
+            <div class="input"><span id="searchicon"><i class="fas fa-search fa-2x"></i></span><input id="input" class="input"  placeholder="search..."></div>
+            <h3 id="statue">best photo of week</h3>
+        </div>
+        <div id="gallery">
+            
+            
+            
+        </div>
 
     </section>
 
-    <div id="modal-out-upload">
-        <div id="modal-in-upload"></div>
-    </div>
 
-    <div id="modal-out-anime">
-        <div id="modal-in-anime"></div>
+    <div id="modal" class="hidden">
+        <div id="modal-in">
+            <img id="modal-img">
+        </div>
     </div>
 
     <script src='pixabay.js'></script>

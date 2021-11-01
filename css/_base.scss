@@ -1,0 +1,36 @@
+$color-primary:#eae7dc;
+$color-primary-light:#d8c3a5;
+$color-primary-dark:#8e8d8a;
+$color-sec:#e98074;
+$color-sec-light:#e85a4f;
+$color-sec-dark:#8b342e;
+
+
+
+
+$font-lgest:55px;
+$font-lger:50px;
+$font-lg:45px;
+$font-md:40px;
+$font-mder:35px;
+$font-mdest:30px;
+$font-sm:25px;
+$font-smer:20px;
+$font-smest:15px;
+
+
+@mixin abscenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin allpage {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin centeralign($width:100% , $margtop:0px) {
+    width: $width;
+    margin: $margtop auto;
+}
