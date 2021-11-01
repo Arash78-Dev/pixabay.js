@@ -152,7 +152,7 @@ async function scrollreq() {
           let response =await fetch(`https://pixabay.com/api/?key=23676200-6508963c3a3d198c31689fd21&q=${find}&image_type=photo&page=${i}`); 
          let images = await response.json();
          console.log(images.hits);
-             if (images.hits.length) {
+
                  for (let item of images.hits){
              let randomx = Math.floor((Math.random()*2)+1)
              let randomy = Math.floor((Math.random()*2)+1)
@@ -166,6 +166,10 @@ async function scrollreq() {
                  </div>
              `
          }
+         if (images.hits.length==0) {
+            gallery.innerHTML+=`<h1 id='nothing'>that's it ... Finish</h1>`;
+            i=11;
+         }
          const card = document.querySelectorAll('.card img');
          card.forEach((elem)=>{
              elem.addEventListener('click',(e)=>{
@@ -176,12 +180,8 @@ async function scrollreq() {
              })
          })
          
-             }
-             else{
-                gallery.innerHTML+=`<h1 id='nothing'>no more found....</h1>`;
-                i=11;
-                
-            }
+             
+             
             
                  
              }
