@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAE,GAAG;EACZ,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "main.scss",
+        "_nav.scss",
+        "_header.scss",
+        "_gallery.scss",
+        "_modal-up.scss",
+        "_modal-anime.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
